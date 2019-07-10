@@ -1,0 +1,29 @@
+body {
+    background: rgb(145, 130, 130);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1 {
+    font-size: 250%;
+    color: rgb(6, 3, 187);
+    text-align: center
+} 
+/* a {
+    border: 2px solid black;
+}
+nav {
+    text-align: center;
+}
+*/
+li {
+    margin-inline: left;
+}
+
+   nav{ align-content: center;
+    padding: 20px;
+    background-color: aliceblue;
+    display: list-item;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    margin: 20px;
+   }
