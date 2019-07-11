@@ -7,18 +7,18 @@ h1 {
     color: rgb(6, 3, 187);
     text-align: center
 } 
-/* a {
+ a {
     border: 2px solid black;
 }
-nav {
+.teal {
     text-align: center;
 }
-*/
+
 li {
     margin-inline: left;
 }
 
-   nav{ align-content: center;
+ nav{ align-content: center;
     padding: 20px;
     background-color: aliceblue;
     display: list-item;
@@ -26,4 +26,18 @@ li {
     border: none;
     font-size: 20px;
     margin: 20px;
-   }
+}
+
+#attributesArticle {
+    text-align: center;
+    float: bottom;
+}
+ol li p {
+    float: top;
+}
+
+.image {
+    border: 2px solid black;
+    margin-inline: left;
+    float: left;
+}
