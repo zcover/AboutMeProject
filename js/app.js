@@ -1,7 +1,7 @@
 'use strict';
 
 // // Function 'gathername' defined and then verify expected response, will loop until provided
-// function gathername(){   
+// function gathername(){
 //    var myName = prompt('What is my name?')
 //     myName = myName.toLowerCase()
 //     //Below is the loop for correct answer
@@ -46,32 +46,45 @@
 //Below is scripting for Lab 3
 // var wordbank = ['Zerek', 'fish', 'other things']
 // var triesRemaining = 3
-// //i position in array
-// // number guessing question
-// var dice = ['1', '2', '3', '4', '5', '6']
 // var flag = false
 
-// //by entering 5, instead of wordbank.length, we have set how many times the for statement runs
-// for (var i = 0 ; i<triesRemaining; i++){
-//     console.log('initial for statement.')
-//     if (flag === true){
-//         console.log('finish')
-//         console.log(triesRemaining)
-//         break;
-//     }else{
-//         var guess = prompt("What is your answer? You have " + (triesRemaining-1) + " attempts remaining");
-//         console.log(triesRemaining);
-//         //enter new variable which does the same thing as i, from loop 1, to count loop 2
-//         for (var loop2=0; loop2<wordbank.length; loop2++){
-//             console.log(triesRemaining)
-//             if (guess.toLowerCase() === wordbank[loop2]){
-//                 flag = true;
-//                 console.log("making flag true");
-//             }else{
-//                 console.log("fish not found");
-//                 console.log(triesRemaining);
+// function Array1(){
+//     while (var i = 0; i < wordbank.length; i++){
+//         if (flag === true){
+//             console.log('flag = true');
+//             break;
+//         } else if (){
 
-//             }
-//         }triesRemaining--
+//         }
 //     }
+
+
 // }
+
+var bugs = ['beetle', 'ant', 'fly', 'bubblebee', 'grasshopper', 'cricket'];
+var pass = false;
+var guessCounter = 0;
+
+while(guessCounter < 6){
+  var userGuess = prompt('What might be one of my favorite bugs?');
+  for(var i = 0; i < bugs.length; i++){
+    if(userGuess === bugs[i]){
+      alert('You got it! Yay, bugs!');
+      console.log('Line 73 pass');
+      pass = true;
+      guessCounter = 6;
+      break;
+    }
+  }
+  if (guessCounter !== 6){
+    alert('Sorry, try again!');
+    console.log('response fail, user entered ' + userGuess + 'to array 1');
+  }
+  guessCounter++;
+  console.log('got to guess counter ++ line');
+
+}
+if(pass === false){
+  alert('You got it wrong!');
+  console.log('In second if statement line 84');
+}
