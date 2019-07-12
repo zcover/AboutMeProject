@@ -11,9 +11,9 @@ function runpage(){
   console.log('Function Array1');
   Array1();
   console.log('Function Array1 completed');
-  // console.log('Function gathername Initiating');
-  // gathername();
-  // console.log('Function gathername completed');
+  console.log('Function gathername Initiating');
+  gathername();
+  console.log('Function gathername completed');
   console.log('Runpage checklist 100% complete')
 }
 // runpage is the only active script on this page, relying on previous 3 functions to gather variables
